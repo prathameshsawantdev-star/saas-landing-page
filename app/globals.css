@@ -1,26 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #A3DC2F;
+  --background: #F6F6F6;
+  --surface: #fff;
+  --footer: #ddd;
+
+  --page-header: #000;
+  --primary-text: #1D1C20; /* Primary dark */
+  --secondary-text: #333333;  /* gray 1 */
+  --tertiary-text: #4F4F4F; /* gray 2 */
+  --tertiary-text-light:#7C7C7C; /* gray 3 */
+  --primary-text-inverse: #fff;
+
+  --primary-button: #1D1C20;
+  --secondary-button: #F6F6F6;
+
+  --success: #72A700;
+  --danger:#EE1F1F;
+  --trust: #003FD8;
+
 }
 
 @theme inline {
+  /* --color-background: var(--background);
+  --color-foreground: var(--foreground); */
+  --color-primary: var(--primary);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-footer: var(--footer);
+
+  /* T E X T */
+  --color-header: var(--page-header);
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
+  --color-tertiary-text: var(--tertiary-text);
+  --color-tertiary-text-light: var(--tertiary-text-light);
+  --color-primary-text-inv: var(--primary-text-inverse);
+  --color-primary-button: var(--primary-button);
+  --color-secondary-button: var(--secondary-button);
+  
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-trust: var(--trust);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: "Inter", sans-serif;
+  --shadow-button-secondary: 10px 1px 2px 20 var(--color-secondary-button); 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: #A3DC2F;
+    --surface: #0F0F0F;
+    --background: #1D1C20;
+    --footer: #252525;
+
+    --page-header: #fff;
+    --primary-text: #F5F5F5; /* Primary dark */
+    --secondary-text: #9B9CA1;  /* gray 1 */
+    --tertiary-text: #B9B3B3; /* gray 2 */
+    --tertiary-text-light:#828282; /* gray 3 */
+    --primary-text-inverse: #1D1C20;
+    --primary-button: #F5F5F5;
+    --secondary-button: #3B3B3B;
+
+    --success: #72A700;
+    --danger:#EE1F1F;
+    --trust: #003FD8;
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
