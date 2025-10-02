@@ -34,7 +34,7 @@ const Testimonial = () => {
         </button>
         <h2 className='text-4xl font-semibold text-center'>What Our Clients Say</h2>
         <p className='text-xs text-tertiary-text-light text-center max-w-2xl'>
-                "Thank you for your trust in Crypt Land! We are grateful for your feedback and are committed to providing the best [products/services offered]. Read what our clients have to say about their experience with us.
+                Thank you for your trust in Crypt Land! We are grateful for your feedback and are committed to providing the best [products/services offered]. Read what our clients have to say about their experience with us.
         </p>
       </div>
 

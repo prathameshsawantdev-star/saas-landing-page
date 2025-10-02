@@ -20,7 +20,7 @@ const PopularBadge = () => (
 // --- Feature List Component
 const FeatureList = ({ features, accentColor }:{ features: any, accentColor: any}) => (
   <div className="flex flex-col gap-y-3 px-2 mt-8 text-tertiary-text">
-    {features.map((feature, index) => (
+    {features.map((feature: any, index:any) => (
       <div key={index} className="flex gap-x-3 text-sm items-start">
         <Check size={18} />
         <span className="text-[15px]">{feature}</span>

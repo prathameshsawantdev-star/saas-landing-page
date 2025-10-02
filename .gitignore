@@ -17,6 +17,8 @@
 /.next/
 /out/
 
+personal.txt
+
 # production
 /build
 

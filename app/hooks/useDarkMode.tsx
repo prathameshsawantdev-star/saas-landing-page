@@ -22,7 +22,7 @@ const useDarkMode = () => {
     // 4. Create the MediaQueryList object and listener function
     const mediaQueryList = window.matchMedia(DARK_MODE_QUERY);
 
-    const listener = (e:any) => {
+    const listener = (e: MediaQueryListEvent) => {
       // Update the state whenever the preference changes
       setIsDarkMode(e.matches);
     };

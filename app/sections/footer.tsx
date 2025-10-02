@@ -1,4 +1,4 @@
-import { Facebook, Github, Instagram, Twitter, X } from 'lucide-react'
+import { Github, Instagram, Twitter } from 'lucide-react'
 import React from 'react'
 
 const Footer = () => {
@@ -54,7 +54,11 @@ const Footer = () => {
 
 
 
+        <div className='h-[1px] bg-tertiary-text-light rounded-lg my-4' />
 
+        <p className='w-lg mx-auto text-center text-tertiary-text text-xs my-4'>
+            © Copyright 2025, All Rights Reserved by FinSaaS
+        </p>
       </div>
     </div>
   )

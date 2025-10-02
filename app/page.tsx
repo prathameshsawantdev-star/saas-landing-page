@@ -1,12 +1,9 @@
 'use client'
 
-import Image from "next/image";
 import Navbar from "./sections/navbar";
 import Main from "./sections/main";
-import useDarkMode from "./hooks/useDarkMode";
 import Testimonial from "./sections/testimonials";
 import Pricing from "./sections/pricing";
-import { Cat } from "lucide-react";
 import CTA from "./sections/cta";
 import Footer from "./sections/footer";
 
